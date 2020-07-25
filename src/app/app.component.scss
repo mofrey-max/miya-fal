@@ -1,0 +1,141 @@
+
+ion-menu ion-content {
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+  
+    --background: var(--ion-item-background, var(--ion-background-color, purple));
+  }
+  
+  /* Remove background transitions for switching themes */
+  ion-menu ion-item {
+    --transition: none;
+  }
+  
+ 
+  
+  /*
+   * Material Design Menu
+  */
+  ion-menu.md ion-list {
+    padding: 20px 0;
+  }
+  
+  ion-menu.md ion-list-header {
+    padding-left: 18px;
+    padding-right: 18px;
+  
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 450;
+  }
+  
+  ion-menu.md ion-item {
+    --padding-start: 18px;
+  
+    margin-right: 10px;
+  
+    border-radius: 0 50px 50px 0;
+  
+    font-weight: 500;
+  }
+  
+  ion-menu.md ion-item.selected {
+    --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  }
+  
+  ion-menu.md ion-item.selected ion-icon {
+    color: var(--ion-color-primary);
+  }
+  
+  ion-menu.md ion-list-header,
+  ion-menu.md ion-item ion-icon {
+    color: var(--ion-color-step-650, #ebedf0);
+  }
+  
+  ion-menu.md ion-list:not(:last-of-type) {
+    border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+  }
+  
+  
+  /*
+   * iOS Menu
+  */
+  ion-menu.ios ion-list-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  
+    margin-bottom: 8px;
+  }
+  
+  ion-menu.ios ion-list {
+    padding: 20px 0 0;
+  }
+  
+  ion-menu.ios ion-item {
+    --padding-start: 16px;
+    --min-height: 50px;
+  }
+  
+  ion-menu.ios ion-item ion-icon {
+    font-size: 24px;
+    color: #eff7f8;
+  }
+  
+  ion-menu.ios ion-item.selected ion-icon {
+    color: var(--ion-color-primary);
+  }
+  
+
+
+ion-content{
+    --ion-background-color:purple;
+    ion-item{
+        color: var(--ion-color-light-tint)
+  
+    }
+    ion-item.selected {
+      --color: var(--ion-color-primary);
+    }
+    ion-icon{
+        color: var(--ion-color-light-tint)
+        
+    }
+    ion-item:hover {
+
+        background-color: #989aa2;
+        color:white;
+        border-color: #989aa2;
+    }
+}
+.ion-text-center{
+    margin-top: 15%;
+}
+
+h6{
+    color: var(--ion-color-warning-shade)  
+}
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    min-height: 190px;
+    .logo-section__wrapper{
+        align-items: center;
+        .logo-section__logo{
+            display: block;
+            width: 70px;
+            height: 70px;
+        }
+       
+    }
+}
+.logo-section__title{
+    --ion-align-text: center;
+    font-size: 1.0rem;
+    font-weight: normal;
+    color: var(--ion-color-dark);
+}
+
+
+ 
